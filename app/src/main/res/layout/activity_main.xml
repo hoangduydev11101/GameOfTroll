@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_all"
+    tools:context="com.duylh.hoisieukho.Activity.MainActivity">
+
+
+    <LinearLayout
+            android:layout_marginBottom="80sp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnChoiMoi"
+                android:textSize="18sp"
+                android:background="@drawable/bg_button"
+                android:text="Bắt đầu"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="150sp"
+                android:layout_height="50sp" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="6dp"
+                android:layout_weight="1" >
+            </Space>
+            <Button
+                android:textSize="18sp"
+                android:id="@+id/btnXepHang"
+                android:background="@drawable/bg_button"
+                android:text="Xếp hạng"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="150sp"
+                android:layout_height="50sp" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="6dp"
+                android:layout_weight="1" >
+            </Space>
+            <Button
+                android:id="@+id/btnDanhGia"
+                android:textSize="18sp"
+                android:background="@drawable/bg_button"
+                android:text="Đánh giá"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="150sp"
+                android:layout_height="50sp" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="6dp"
+                android:layout_weight="1" >
+            </Space>
+            <Button
+                android:id="@+id/btnThoat"
+                android:textSize="18sp"
+                android:background="@drawable/bg_button"
+                android:text="Thoát"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="150sp"
+                android:layout_height="50sp" />
+        </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:paddingTop="30dp">
+        <ImageButton android:layout_width="35dp"
+            android:id="@+id/btnQuestion"
+            android:layout_height="35sp"
+            android:layout_marginRight="40sp"
+            android:background="@drawable/question" />
+        <ImageButton android:layout_width="35dp"
+            android:id="@+id/btnInfor"
+            android:layout_height="35sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="40sp"
+            android:background="@drawable/information" />
+
+        <ImageButton
+            android:id="@+id/btnShare"
+            android:layout_width="35dp"
+            android:layout_height="35sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="40sp"
+            android:background="@drawable/share" />
+
+        <ImageButton android:layout_width="35dp"
+            android:id="@+id/btnMute"
+            android:layout_height="35sp"
+            android:layout_marginLeft="20sp"
+            android:background="@drawable/mute_not" />
+    </LinearLayout>
+
+</FrameLayout>

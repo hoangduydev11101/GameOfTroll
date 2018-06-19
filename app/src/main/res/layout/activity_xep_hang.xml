@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_xep_hang"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.duylh.hoisieukho.Activity.XepHangActivity">
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#194b49"
+            android:layout_marginTop="20sp"
+            android:text="Player"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#194b49"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="50sp"
+            android:textSize="25sp"
+            android:text="Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10sp"
+        android:background="#4dd0e1"
+        android:layout_width="300sp"
+        android:layout_height="2sp">
+
+    </LinearLayout>
+    <ListView
+        android:layout_marginTop="10sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300sp"
+        android:id="@+id/lvXepHang"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#26c6da"
+    android:orientation="vertical"
+    tools:context="com.duylh.hoisieukho.Activity.GameActivity">
+
+    <FrameLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:paddingTop="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageButton android:layout_width="35dp"
+                android:id="@+id/btnPauseGame"
+                android:layout_height="35sp"
+                android:layout_marginLeft="20sp"
+                android:layout_gravity="left"
+                android:background="@mipmap/ic_launcher_back_button" />
+            <Button
+                android:id="@+id/btnStop"
+                android:background="@drawable/hand"
+                android:layout_marginLeft="10sp"
+                android:layout_width="35sp"
+                android:layout_height="35sp" />
+        </LinearLayout>
+
+
+            <TextView android:layout_width="95dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/txtDiem"
+                android:layout_height="45sp"
+                android:text="Điểm: 15"
+                android:textColor="#3f8042"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_diem"
+                />
+            <TextView android:layout_width="95dp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="20sp"
+                android:id="@+id/txtTimeGame"
+                android:layout_height="35sp"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:text="Time: 60"/>
+
+
+    </FrameLayout>
+
+    <FrameLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:paddingTop="30dp">
+        <TextView android:layout_width="75dp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/txt5050"
+            android:layout_height="40sp"
+            android:layout_gravity="left"
+            android:background="@drawable/bg_help"
+            android:text="50:50"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="5sp"
+            android:textColor="#231519"
+            android:textSize="20sp"/>
+        <TextView android:layout_width="120dp"
+            android:padding="5sp"
+            android:background="@drawable/bg_help"
+
+            android:id="@+id/txtKhanGia"
+            android:layout_height="40sp"
+            android:textColor="#231519"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="Đổi câu hỏi"/>
+
+        <TextView android:layout_width="75dp"
+            android:layout_marginLeft="20sp"
+            android:background="@drawable/bg_help"
+            android:layout_gravity="right"
+            android:id="@+id/txtTuVan"
+            android:layout_height="40sp"
+            android:layout_marginRight="20sp"
+            android:text="Tư vấn"
+            android:textColor="#231519"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="5sp"
+            />
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/bg_cauhoi"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="250sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCauHoiSo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30sp"
+            android:text="Câu 10"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_marginLeft="120sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCauHoi"
+            android:text="Có 1 khúc vải, muốn cắt ra thành 100 khúc, mỗi lần cắt mất 5s. Hỏi sau bao lâu thì cắt xong?"
+            android:textSize="19sp"
+            android:textColor="#000"
+            android:layout_below="@+id/txtCauHoiSo"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_marginTop="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="50sp">
+        <TextView
+            android:id="@+id/txtChonA"
+            android:paddingLeft="12sp"
+            android:textColor="#000"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:background="@drawable/bg_dapan"
+            android:textSize="16sp"
+            android:layout_gravity="left"
+            android:text="A: ABC..XYZ"
+            android:layout_width="110sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/txtChonB"
+            android:paddingLeft="12sp"
+            android:textColor="#000"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/bg_dapan"
+            android:textSize="16sp"
+            android:layout_gravity="right"
+            android:text="A: ABC..XYZ"
+            android:layout_width="110sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="50sp">
+        <TextView
+            android:id="@+id/txtChonC"
+            android:paddingLeft="12sp"
+            android:textColor="#000"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:background="@drawable/bg_dapan"
+            android:textSize="16sp"
+            android:layout_gravity="left"
+            android:text="A: ABC..XYZ"
+            android:layout_width="110sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/txtChonD"
+            android:paddingLeft="12sp"
+            android:textColor="#000"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/bg_dapan"
+            android:textSize="16sp"
+            android:layout_gravity="right"
+            android:text="A: ABC..XYZ"
+            android:layout_width="110sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>

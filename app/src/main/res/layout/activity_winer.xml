@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:id="@+id/txtWin"
+        android:textColor="#ffdd00"
+        android:textSize="30sp"
+        android:layout_marginTop="110sp"
+        android:text="You Win!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.felipecsl.gifimageview.library.GifImageView
+        android:id="@+id/gifWin"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        />
+
+    <com.jetradarmobile.snowfall.SnowfallView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:snowflakesNum="70"
+        app:snowflakeAlphaMin="150"
+        app:snowflakeAlphaMax="255"
+        app:snowflakeAngleMax="5"
+        app:snowflakeSizeMin="8dp"
+        app:snowflakeSizeMax="32dp"
+        app:snowflakeSpeedMin="6"
+        app:snowflakeSpeedMax="14"
+        app:snowflakesFadingEnabled="true"
+        app:snowflakesAlreadyFalling="false"
+        app:snowflakeImage="@drawable/flower"/>
+    <com.jetradarmobile.snowfall.SnowfallView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:snowflakesNum="55"
+        app:snowflakeAlphaMin="80"
+        app:snowflakeAlphaMax="255"
+        app:snowflakeAngleMax="5"
+        app:snowflakeSizeMin="8dp"
+        app:snowflakeSizeMax="32dp"
+        app:snowflakeSpeedMin="6"
+        app:snowflakeSpeedMax="14"
+        app:snowflakesFadingEnabled="true"
+        app:snowflakesAlreadyFalling="false"
+        app:snowflakeImage="@drawable/snowflake"/>
+    <com.jetradarmobile.snowfall.SnowfallView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:snowflakesNum="20"
+        app:snowflakeAlphaMin="80"
+        app:snowflakeAlphaMax="255"
+        app:snowflakeAngleMax="5"
+        app:snowflakeSizeMin="8dp"
+        app:snowflakeSizeMax="32dp"
+        app:snowflakeSpeedMin="3"
+        app:snowflakeSpeedMax="10"
+        app:snowflakesFadingEnabled="true"
+        app:snowflakesAlreadyFalling="false"
+        app:snowflakeImage="@drawable/plane"/>
+
+    <RelativeLayout
+        android:layout_marginTop="170sp"
+        android:layout_marginBottom="20sp"
+        android:layout_gravity="center"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:id="@+id/edtNameWiner"
+            android:background="@drawable/bg_inputwin"
+            android:hint="input name"
+            android:layout_width="200sp"
+            android:layout_height="50sp" />
+        <ImageButton
+
+            android:layout_alignParentRight="true"
+            android:id="@+id/btnSendWiner"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10sp"
+            android:background="@null"
+            android:src="@mipmap/ic_launcher_send_white"
+            android:layout_width="40sp"
+            android:layout_height="40sp" />
+    </RelativeLayout>
+
+</FrameLayout>
